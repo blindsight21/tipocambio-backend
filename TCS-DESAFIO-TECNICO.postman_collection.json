@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "3f6256a8-d16a-4f7b-a3a1-ac7928d3fb04",
+		"name": "TCS-DESAFIO-TECNICO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "tipo-cambio",
+			"item": [
+				{
+					"name": "/realizarTipoCambio/{monto}/{monedaOrigen}/{monedaDestino}",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbmZvX2FkaWNpb25hbCI6IkhvbGEgcXVlIHRhbCE6IG9jb2xsYWRvIiwidXNlcl9uYW1lIjoib2NvbGxhZG8iLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiYXBlbGxpZG8iOiJDT0xMQURPIFZBUkdTIiwiZXhwIjoxNjMxMjk1MzI1LCJub21icmUiOiJPTUFSIEFVR1VTVE8iLCJhdXRob3JpdGllcyI6WyJVU0VSIiwiQURNSU4iXSwianRpIjoiMGJkMzQzNjQtNjMwYS00MDY4LThhZmItZmM0YjY1OTVlY2YyIiwiZW1haWwiOiJvY29sbGFkb0B0Y3MuY29tIiwiY2xpZW50X2lkIjoidGNzIn0.fLSWWCRMuKEb_kH3YR5nlkLooSzZLkXJZg9alfvlU4hp0puB7tPQKjfTkLTK9C7Kld6jP2sfJZKG_8e0ff5lpQly0Xcxd0_4fNFLcI6NHm1rI8st6nwbKC1CAtw4nQerxH4Lk3DCtMQ4yfqoDc0ZQh5hPpWOYAUZ-xTiE3rSDFo4q9g26uo6NEMQQXC3KaMCV6ST-Seu-AycMrsODwDOjyA2ESeM2HnrSCD_wgFRzrogosS4e4KzqH0im-i-aaHoGYLZhtknf_Ws4aVrZqMQO8QhopeBQJdzo0Hf9hdHlIcNOQwuaXxtiOY4toW2kc6e3Ffa21oaDxx1LJjSRcKkkQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/tipocambio/realizarTipoCambio/5/USD/PEN",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tipocambio",
+								"realizarTipoCambio",
+								"5",
+								"USD",
+								"PEN"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actualizarTipoCambio",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbmZvX2FkaWNpb25hbCI6IkhvbGEgcXVlIHRhbCE6IG9jb2xsYWRvIiwidXNlcl9uYW1lIjoib2NvbGxhZG8iLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiYXBlbGxpZG8iOiJDT0xMQURPIFZBUkdTIiwiZXhwIjoxNjMxMjk1MzI1LCJub21icmUiOiJPTUFSIEFVR1VTVE8iLCJhdXRob3JpdGllcyI6WyJVU0VSIiwiQURNSU4iXSwianRpIjoiMGJkMzQzNjQtNjMwYS00MDY4LThhZmItZmM0YjY1OTVlY2YyIiwiZW1haWwiOiJvY29sbGFkb0B0Y3MuY29tIiwiY2xpZW50X2lkIjoidGNzIn0.fLSWWCRMuKEb_kH3YR5nlkLooSzZLkXJZg9alfvlU4hp0puB7tPQKjfTkLTK9C7Kld6jP2sfJZKG_8e0ff5lpQly0Xcxd0_4fNFLcI6NHm1rI8st6nwbKC1CAtw4nQerxH4Lk3DCtMQ4yfqoDc0ZQh5hPpWOYAUZ-xTiE3rSDFo4q9g26uo6NEMQQXC3KaMCV6ST-Seu-AycMrsODwDOjyA2ESeM2HnrSCD_wgFRzrogosS4e4KzqH0im-i-aaHoGYLZhtknf_Ws4aVrZqMQO8QhopeBQJdzo0Hf9hdHlIcNOQwuaXxtiOY4toW2kc6e3Ffa21oaDxx1LJjSRcKkkQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"txtIsoDivisaOrigen\" : \"EUR\",\r\n    \"numValorMonetario\" : 4.85,\r\n    \"txtIsoDivisaDestino\" : \"PEN\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/tipocambio/actualizarTipoCambio",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tipocambio",
+								"actualizarTipoCambio"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "oauth/token",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "tcs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "ocollado",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/tipocambio/oauth/token",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tipocambio",
+								"oauth",
+								"token"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
