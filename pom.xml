@@ -8,7 +8,7 @@
 		<version>2.5.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.tcs</groupId>
+	<groupId>com.encora</groupId>
 	<artifactId>api-tipocambio-backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>API que realiza el tipo de cambio</name>
